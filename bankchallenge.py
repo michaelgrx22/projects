@@ -24,7 +24,7 @@ while True:
             valor_cliente = float(valor_cliente)
             
             if valor_cliente < 0:
-                print('Por favor informado um valor maior que 0.')
+                print('Por favor informar um valor maior que 0.')
                 continue
             else:
                 saldo += valor_cliente
@@ -45,7 +45,7 @@ while True:
             elif valor_cliente > saldo:
                 print('Seu saldo é insuficiente para a opereção de saque.') 
 
-            elif valor_cliente > 500:
+            elif valor_cliente > limite:
                 print('O valor informado excede o limite para a operação.')
             
             else:
