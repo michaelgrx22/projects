@@ -58,6 +58,7 @@ def depositar(saldo, valor_cliente,extrato, /):
     else:
         print('O valor informado é inválido, tente novamente!')
     return saldo, extrato
+
 def sacar (*, saldo, valor_cliente,extrato, limite,numero_saques, limite_saques):
     if valor_cliente.isdigit():
         valor_cliente = float(valor_cliente)
@@ -85,6 +86,7 @@ def exibir_extrato(saldo,/, *,extrato):
     print('Não foram realizadas movimentações.' if not extrato else extrato)
     print(f'\nSaldo: R$ {saldo:.2f}')
     print('==========================================')
+
 main()
 
 
